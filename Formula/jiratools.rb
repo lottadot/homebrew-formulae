@@ -9,10 +9,10 @@ class Jiratools < Formula
 
   depends_on :xcode => ["7.3", :build]
   depends_on 'xcproj' => :recommended
-  depends_on 'carthage'
+  depends_on "carthage" => :build
 
   def install
-    system "make", "prefix_install"
+    system "make", "prefix_install", "PREFIX=#{prefix}"
   end
 
   test do
