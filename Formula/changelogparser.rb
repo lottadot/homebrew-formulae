@@ -6,7 +6,7 @@ class Changelogparser < Formula
   url "https://github.com/lottadot/changelogparser/archive/0.1.0.tar.gz"
   version "0.1.0"
   # shasum -a 256
-  sha256 "178045c5d0a960b2b54b4fb74c98d3247cfb6085adba2ceca0694bfd641ee7d0
+  sha256 "178045c5d0a960b2b54b4fb74c98d3247cfb6085adba2ceca0694bfd641ee7d0"
 
   depends_on :xcode => ["8.0", :build]
   depends_on 'xcproj' => :recommended
