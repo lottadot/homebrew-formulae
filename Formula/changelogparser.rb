@@ -3,10 +3,10 @@ require 'formula'
 class Changelogparser < Formula
   desc "CA macOS command line app to parse Changelogs."
   homepage "https://github.com/lottadot/changelogparser"
-  url "https://github.com/lottadot/changelogparser/archive/0.1.1.tar.gz"
-  version "0.1.1"
+  url "https://github.com/lottadot/changelogparser/archive/0.1.3.tar.gz"
+  version "0.1.3"
   # shasum -a 256
-  sha256 "1b0eaf127225d7c5b15973194ccd048fb0705c0cbb11f2d05a48b56869257760"
+  sha256 "72794cc72e7b487a1d4a487eb0557a5d364d2213167e437bc0dc674ea8ac758e"
 
   depends_on :xcode => ["8.0", :build]
   depends_on 'xcproj' => :recommended
@@ -17,6 +17,6 @@ class Changelogparser < Formula
   end
 
   test do
-    system bin/"changelogparser", "--version"
+    system bin/"changelogparser", "version"
   end
 end
